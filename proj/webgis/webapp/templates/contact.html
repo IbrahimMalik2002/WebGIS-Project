@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIM REAL ESTATE</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <style src="https://kit.fontawesome.com/a076d05399.js"></style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </head>
+
+  <body>
+    <header class="header" id="about">
+      <nav>
+        <a href="index.html" style="padding-right: 140px">
+          <img src="static/img/logo.png"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="booking.html">BOOKING</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="Login.html">LOGIN</a></li>
+            <li><a href="maps.html">EXPLORE</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+          </ul>
+        </div>
+        <br />
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="abt-content">
+        <h1><span>CONTACT US</span></h1>
+      </div>
+    </header>
+    <section id="contact">
+      <div class="containers">
+        <h2>Feel Free To Ask</h2>
+
+        <div class="flex">
+          <div id="form-container">
+            <h3>Contact Form</h3>
+            <form action="https://formspree.io/f/xwkadzwn" method="POST">
+              <!-- <input name="_redirect" type="hidden" id="name" value=""> -->
+              <label for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your Name...."
+              />
+
+              <label for="email">Email</label>
+              <input
+                type="text"
+                name="mail"
+                id="email"
+                placeholder="abc@123gmail.com"
+              />
+
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                name="sub"
+                id="subject"
+                placeholder="Enquiry.."
+              />
+
+              <label for="message">Message</label>
+              <textarea
+                name="msg"
+                id="message"
+                placeholder="Write your message here.."
+              ></textarea>
+
+              <button class="rounded">Send Message</button>
+            </form>
+          </div>
+
+          <div id="address-container">
+            <label>Address</label>
+            <address>
+              Institute of Geographical Information System<br />
+              NUST University, H-12 Campus, Islamabad
+            </address>
+
+            <label>Phone</label>
+            <a href="#">051-123-4567</a>
+
+            <label>Email Address</label>
+            <a href="aim_real_estate@gmail.com">ouremail@domain.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- javascript of toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- ------------------Top Button-------------------------------- -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <script>
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
+    <!------------------- Site footer -------------------------------------->
+    <footer>
+      <h4>About Us</h4>
+      <p class="text-justify">
+        Real estate is a class of "real property" that includes land and
+        anything permanently attached to it, <br />
+        whether natural or man-made. You can invest in real estate directly by
+        purchasing a home, rental <br />
+        property or other property, or indirectly through SK Architects
+      </p>
+      <div class="icons">
+        <a class="facebook" href="#" style="color: #3c06ff"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        &nbsp;
+        <a class="twitter" href="#" style="color: #3c06ff"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        &nbsp;
+        <a class="instagram" href="#" style="color: #3c06ff"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        &nbsp;
+        <a class="linkedin" href="#" style="color: #3c06ff"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+      </div>
+
+      <hr />
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2023 All Rights Reserved by
+              <a href="#">AIM Real Estate</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AIM REAL ESTATE </title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style src='https://kit.fontawesome.com/a076d05399.js'></style>
+
+</head>
+
+<body>
+    <section class="header" id="home">
+        <nav>
+            <a href="index.html" style="padding-right:40px"> <img src="static/img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#project">PROJECTS</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="emailTest.html">BOOKING</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+					<li><a href="Login.html">REGISTER</a></li>
+                    <li><a href="maps.html">EXPLORE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 style="color: white;">AIM REAL-ESTATE</h1>
+            <h3 style="color: white;">Your Journey to Exceptional Real Estate Begins Here</h3>
+            <p>
+                Welcome to AIM Real Estate, where your real estate aspirations find their perfect home. 
+                Whether you're searching for your dream property, looking to sell with confidence, or 
+                seeking expert investment guidance, we are your trusted partner every step of the way.
+            </p>
+            <a href="" class="hero-btn">Visit Us to Know More</a>
+        </div>
+
+    </section>
+
+    <!-- ------------------  Project --------------------------------- -->
+
+    <section class="project" id="project">
+        <h1>PROJECTS THAT WE HAVE DONE </h1>
+        <p>
+            We have done all kinds of projects including sales of houses,buidings,
+            apartments, and bungalows in Islamabad.
+        </p>
+        <div class="card-group">
+            <div class="card">
+                <img id="image" src="static/img/h1.jpeg" alt="">
+                <div class="content">
+                    <h2 id="heading">Sector I-8</>
+                    <p>Solid brick houses (also known as double-brick and
+                        solid masonry houses) are built from either two layers
+                        of brick, or a layer of concrete block and an adjacent
+                        layer of brick on the exterior. ... A single layer of
+                        brick is built near each exterior wall and attached to
+                        the house with metal ties.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img id="image" src="static/img/h2.jpeg" alt="">
+                <div class="content">
+                    <h2 id="heading">Sector G-11</h2>
+                    <p>Solid brick houses (also known as double-brick and
+                        solid masonry houses) are built from either two layers
+                        of brick, or a layer of concrete block and an adjacent
+                        layer of brick on the exterior. ... A single layer of
+                        brick is built near each exterior wall and attached to
+                        the house with metal ties.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img id="image" src="static/img/h3.jpeg" alt="">
+                <div class="content">
+                    <h2 id="heading">Sector F-10</h2>
+                    <p>Solid brick houses (also known as double-brick and
+                        solid masonry houses) are built from either two layers
+                        of brick, or a layer of concrete block and an adjacent
+                        layer of brick on the exterior. ... A single layer of
+                        brick is built near each exterior wall and attached to
+                        the house with metal ties.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img  id="image" src="static/img/h1.jpeg" alt="">
+                <div class="content">
+                    <h2 id="heading">Sector H-9</h2>
+                    <p>Solid brick houses (also known as double-brick and
+                        solid masonry houses) are built from either two layers
+                        of brick, or a layer of concrete block and an adjacent
+                        layer of brick on the exterior. ... A single layer of
+                        brick is built near each exterior wall and attached to
+                        the house with metal ties.</p>
+                </div>
+            </div>
+           
+        </div>
+        <br><br><br><br>
+    </section>
+
+
+    <!-- javascript of toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <!-----------------Gallery ----------------------------------------------->
+
+    <section name="gallery" id="gallery">
+        <div class="gallerys">
+            <h1>GALLERY</h1>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="static/img/h_1.jpeg" style="width:100%">
+                    <div class="text">Caption</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="static/img/h_2.jpg" style="width:100%">
+                    <div class="text">Caption</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="static/img/h_5.jpg" style="width:100%">
+                    <div class="text">Caption</div>
+                </div>
+
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <script>
+            /------------------------JS for GAllERY-------------------------/
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) 
+            {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) 
+            {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) 
+            {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </section>
+
+ <!-- ---------------------  Services  --------------------------------------------- -->
+<section class="services" id="services">
+    <h1>OUR SERVICES</h1>
+    <p>We provides all kinds of projects like building, appartment, banglow,office designing etc.</p>
+
+    <div class="service-row">
+        <div class="service-column">
+            <img src="static/img/s-1.png">
+            <h3>Buying Home</h3>
+            <p>Real estate development is a process that involves the purchase of raw land, rezoning, construction and
+                renovation of buildings, and sale or lease of the finished product to end users.</p>
+        </div>
+
+        <div class="service-column">
+            <img src="static/img/s-2.png">
+            <h3>Renting Home</h3>
+            <p>Sales and marketing firms work with developers to sell the buildings and units they create.</p>
+        </div>
+
+        <div class="service-column">
+            <img src="static/img/s-3.png">
+            <h3>Selling Home</h3>
+            <p>A real estate brokerage is a firm that employs a team of real state agents (realtors) who help facilitate
+                a transaction between the buyers and sellers of property.</p>
+        </div>
+    </div>
+
+</section>
+
+<section>
+    <br>
+</section>
+
+
+
+<!-- ------------------Top Button-------------------------------- -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() 
+        {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+                {
+                    mybutton.style.display = "block";
+                } 
+            else 
+                {
+                    mybutton.style.display = "none";
+                }
+        }
+
+        function topFunction() 
+        {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        }
+    </script>   
+
+<!------------------- Site footer -------------------------------------->
+<footer>
+    <h4>About Us</h4>
+    <p class="text-justify">Real estate is a class of "real property" that includes
+        land and anything permanently attached to it, <br> whether
+        natural or man-made. You can invest in real estate
+        directly by purchasing a home, rental <br> property or other
+        property, or indirectly through AIM Real Estate
+    </p>
+    <div class="icons">
+        <a class="facebook" href="#" style="color: #3c06ff;"><i class="fa fa-facebook"></i></a> &nbsp;
+        <a class="twitter" href="#" style="color: #3c06ff;"><i class="fa fa-twitter"></i></a> &nbsp;
+        <a class="instagram" href="#" style="color: #3c06ff;"><i class="fa fa-instagram"></i></a> &nbsp;
+        <a class="linkedin" href="#" style="color: #3c06ff;"><i class="fa fa-linkedin"></i></a>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                    <a href="#">AIM Real Estate</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+
+</html>

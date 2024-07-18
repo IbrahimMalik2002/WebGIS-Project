@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIM REAL ESTATE</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/font-awesome/css/font-awesome.min.css">
+  <style src='https://kit.fontawesome.com/e791a957f0.js'></style>
+  <link rel="stylesheet" href="static/css/leaflet.css"/>
+</head>
+
+<body>
+  <header class="header" id="about">
+    <nav>
+      <a href="index.html" style="padding-right: 140px;"><img src="static/img/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#project">PROJECTS</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="booking.html">BOOKING</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="Login.html">LOGIN</a></li>
+          <li><a href="maps.html">EXPLORE</a></li>
+          <li><a href="register.html">REGISTER</a></li>
+
+        </ul>
+      </div><br>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="abt-content">
+      <h1><span>SIGN IN OR REGISTER NOW!</span></h1>
+      <p class="spin">AIM real estate company ensures a seamless and rewarding experience throughout your property journey. With a wealth of expertise and a commitment to <br>
+                      excellence, we stand out from the competition. 
+      </p>
+    </div>
+
+  </header>
+ 
+  <div class="container">
+    <form action="{% url 'loggingin' %}" method="POST">
+        {% csrf_token %}
+      Username: <input type="text" name="username"><br>
+      Password: <input type="password" name="password"><br>
+      <input type="submit" value="Login">
+    </form>    
+</div>
+
+
+
+
+<script src="static/js/script.js"></script>
+<script src="static/js/leaflet.js"></script>
+<script src="static/js/main.js"></script>
+
+</body>
+
+</html>

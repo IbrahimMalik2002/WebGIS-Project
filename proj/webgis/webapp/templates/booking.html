@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIM REAL ESTATE</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/testStyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="static/css/leaflet.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <style src="https://kit.fontawesome.com/e791a957f0.js"></style>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav>
+        <a href="index.html" style="padding-right: 140px">
+          <img src="static/img/logo.png"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul style="font-size: 16px">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="booking.html">BOOKING</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="Login.html">LOGIN</a></li>
+            <li><a href="maps.html">EXPLORE</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+          </ul>
+        </div>
+        <br />
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="abt-content">
+        <h1><span>START YOUR BOOKING NOW!</span></h1>
+        <p class="para">Book your dream house</p>
+      </div>
+    </header>
+
+    <style>
+      /* CSS styling for the form */
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: #f4f4f4;
+      }
+      h2 {
+        text-align: center;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+
+    <!--THIS CODE THIS FOR THE NUMBER OF HOUSES FOR SALE IN MAJOR CITIES OF PAKISTAN -->
+    <head>
+      <title>Houses for Sale in Islamabad</title>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <style>
+        .chart-container {
+          border: 1px solid #000000;
+          padding: 20px;
+          max-width: 400px;
+          margin: 0 auto;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="chart-container">
+        <h3>Houses for sale in Pakistan<br /><br /></h3>
+        <canvas id="houseChart"></canvas>
+      </div>
+
+      <script>
+        // Data representing the number of houses for sale in major cities of Pakistan
+        var houseData = {
+          labels: [
+            "Sector F-8",
+            "Sector F-10",
+            "Sector G-7",
+            "Sector G-8",
+            "Sector G-10",
+            "Sector G-11",
+            "Sector H-8",
+            "Sector H-9",
+            "Sector I-8",
+            "Sector I-9",
+          ],
+          datasets: [
+            {
+              label: "Number of Houses for Sale",
+              data: [13, 6, 7, 8, 7, 5, 6, 3, 5, 5],
+              backgroundColor: [
+                "rgba(255, 99, 132, 0.6)",
+                "rgba(54, 162, 235, 0.6)",
+                "rgba(75, 192, 192, 0.6)",
+                "rgba(255, 205, 86, 0.6)",
+                "rgba(255, 159, 64, 0.6)",
+                "rgba(153, 102, 255, 0.6)",
+                "rgba(255, 99, 255, 0.6)",
+                "rgba(54, 162, 255, 0.6)",
+                "rgba(255, 19, 42, 0.6)",
+                "rgba(59, 162, 35, 0.6)",
+              ],
+              borderWidth: 2,
+            },
+          ],
+        };
+
+        // Options for the chart
+        var chartOptions = {
+          responsive: true,
+          plugins: {
+            legend: {
+              display: true,
+              position: "bottom",
+            },
+          },
+        };
+
+        // Create the pie chart
+        var ctx = document.getElementById("houseChart").getContext("2d");
+        new Chart(ctx, {
+          type: "pie",
+          data: houseData,
+          options: chartOptions,
+        });
+      </script>
+    </body>
+
+    <!--THIS CODE THIS FOR THE AREA WISE COMPARISON IN PAKISTAN -->
+
+    <head>
+      <title>Sector-wise Price Comparison - Pakistan</title>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="webgis_proj/js/chart.js"></script>
+      <style>
+        .chart-container {
+          width: 800px;
+          margin: 20px auto;
+        }
+      </style>
+    </head>
+
+    <div class="chart-container">
+      <h3>Area-Wise Price Comparison<br /><br /></h3>
+      <canvas id="priceChart"></canvas>
+    </div>
+
+    <script>
+      // Data representing the average property prices across different areas in Pakistan
+      var areaData = {
+        labels: [
+          "Sector F-8",
+          "Sector F-10",
+          "Sector G-7",
+          "Sector G-8",
+          "Sector G-10",
+          "Sector G-11",
+          "Sector H-8",
+          "Sector H-9",
+          "Sector I-8",
+          "Sector I-9",
+        ],
+        datasets: [
+          {
+            label: "Price distribution",
+            data: [
+              200000, 190000, 180000, 210000, 200000, 200000, 200000, 200000,
+              220000, 180000,
+            ],
+            borderColor: "rgba(54, 162, 235, 1)",
+            backgroundColor: "rgba(54, 162, 235, 0.5)",
+            pointRadius: 4,
+            pointBackgroundColor: "rgba(54, 162, 235, 1)",
+            borderWidth: 2,
+            fill: false,
+          },
+        ],
+      };
+
+      // Options for the chart
+      var chartOptions = {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: "Average Price ($)",
+            },
+          },
+          x: {
+            title: {
+              display: true,
+              text: "Sectors of Islamabad",
+            },
+          },
+        },
+      };
+
+      // Create the line chart
+      var ctx = document.getElementById("priceChart").getContext("2d");
+      new Chart(ctx, {
+        type: "line",
+        data: areaData,
+        options: chartOptions,
+      });
+    </script>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <form action="maps.html">
+        <div class="container">
+          <h3>Find your perfect home</h3>
+          <br />
+
+          <div class="form-group">
+            <select name="" id="">
+              <option value="" disabled hidden selected>City</option>
+              <option value="Islamabad">Islamabad</option></select
+            ><br />
+          </div>
+
+          <div class="form-group">
+            <select name="" id="">
+              <option value="" disabled hidden selected>Sectors</option>
+              <option value="F-8 Sector">Sector F-8</option>
+              <option value="F-10 Sector">Sector F-10</option>
+              <option value="G-7 Sector">Sector G-7</option>
+              <option value="G-8 Sector">Sector G-8</option>
+              <option value="G-11 Sector">Sector G-11</option>
+              <option value="H-8 Sector">Sector H-8</option>
+              <option value="H-9 Sector">Sector H-9</option>
+              <option value="H-12 Sector">Sector H-12</option>
+              <option value="I-8 Sector">Sector I-8</option>
+              <option value="I-9 Sector">Sector I-9</option></select
+            ><br />
+          </div>
+
+          <div class="form-group">
+            <select name="" id="">
+              <option value="" disabled hidden selected>Price</option>
+              <option value="$100000">$100000</option>
+              <option value="$200000">$200000</option>
+              <option value="$300000">$300000</option></select
+            ><br />
+          </div>
+          <input type="submit" value="search property" class="btn" />
+        </div>
+      </form>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- javascript of toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+
+    <!-- ------------------Top Button-------------------------------- -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <script>
+      mybutton = document.getElementById("myBtn");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+    <!------------------- Site footer -------------------------------------->
+    <footer>
+      <h4>About Us</h4>
+      <p class="text-justify">
+        Real estate is a class of "real property" that includes land and
+        anything permanently attached to it, <br />
+        whether natural or man-made. You can invest in real estate directly by
+        purchasing a home, rental <br />
+        property or other property, or indirectly through SK Architects
+      </p>
+      <div class="icons">
+        <a class="facebook" href="#" style="color: #e02315"
+          ><i class="fa fa-facebook"></i
+        ></a>
+        &nbsp;
+        <a class="twitter" href="#" style="color: #f44336"
+          ><i class="fa fa-twitter"></i
+        ></a>
+        &nbsp;
+        <a class="instagram" href="#" style="color: #f44336"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        &nbsp;
+        <a class="linkedin" href="#" style="color: #f44336"
+          ><i class="fa fa-linkedin"></i
+        ></a>
+      </div>
+
+      <hr style="border: 1px solid black" />
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2021 All Rights Reserved by
+              <a href="#">SK Architects</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction Websites</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/font-awesome/css/font-awesome.min.css">
+  <style src='https://kit.fontawesome.com/e791a957f0.js'></style>
+  <link rel="stylesheet" href="static/css/leaflet.css"/>
+</head>
+<body>
+  <header class="header" id="about">
+    <nav>
+      <a href="index.html" style="padding-right: 140px;"><img src="static/img/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#project">PROJECTS</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="booking.html">BOOKING</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="Login.html">LOGIN</a></li>
+          <li><a href="maps.html">EXPLORE</a></li>
+          <li><a href="register.html">REGISTER</a></li>
+        </ul>
+      </div><br>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="abt-content">
+      <h1><span>LOGGED OUT</span></h1>
+      <p>You have been successfully logged out.</p>
+    </div>
+
+  </header>
+
+  <!-- Site footer --
+  <footer>
+    <h4>About Us</h4>
+    <p class="text-justify">Real estate is a class of "real property" that includes
+      land and anything permanently attached to it, <br> whether
+      natural or man-made. You can invest in real estate
+      directly by purchasing a home, rental <br> property or other
+      property, or indirectly through AIM Real Estate
+    </p>
+    <div class="icons">
+        <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+        <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+        <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+        <a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+        <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
+      </div>
+  
+      <p>&copy; 2023 Construction Websites. All rights reserved.</p>
+    </footer>
+  
+    <script src="static/js/script.js"></script>
+    <script src="static/js/leaflet.js"></script>
+  </body>
+  </html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIM REAL ESTATE</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/font-awesome/css/font-awesome.min.css">
+  <style src='https://kit.fontawesome.com/e791a957f0.js'></style>
+  <link rel="stylesheet" href="static/css/leaflet.css"/>
+</head>
+<body>
+  <header class="header" id="about">
+    <nav>
+      <a href="index.html" style="padding-right: 140px;"><img src="static/img/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="#project">PROJECTS</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="booking.html">BOOKING</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="Login.html">LOGIN</a></li>
+          <li><a href="maps.html">EXPLORE</a></li>
+          <li><a href="register.html">REGISTER</a></li>
+        </ul>
+      </div><br>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="abt-content">
+ <!-- Logout Button -->
+ <button onclick="logout()">Logout</button>
+  
+ <script>
+   // Function to handle logout and redirect to login page
+   function logout() {
+     // Perform any necessary logout actions here
+     
+     // Redirect to the login page
+     window.location.href = "Login.html";
+   }
+ </script>
+    </div>
+
+  </header>
+
+
+
+<!-- ------------------Top Button-------------------------------- -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">
+  <i class="fa fa-chevron-up" aria-hidden="true"></i>
+</button>
+<script>
+  //Get the button:
+  mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() 
+  {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+          {
+              mybutton.style.display = "block";
+          } 
+      else 
+          {
+              mybutton.style.display = "none";
+          }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() 
+  {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>   
+
+<!------------------- Site footer -------------------------------------->
+<footer>
+<h4>About Us</h4>
+<p class="text-justify">Real estate is a class of "real property" that includes
+  land and anything permanently attached to it, <br> whether
+  natural or man-made. You can invest in real estate
+  directly by purchasing a home, rental <br> property or other
+  property, or indirectly through AIM Real Estate
+</p>
+<div class="icons">
+  <a class="facebook" href="#" style="color: #3c06ff;"><i class="fa fa-facebook"></i></a> &nbsp;
+  <a class="twitter" href="#" style="color: #3c06ff;"><i class="fa fa-twitter"></i></a> &nbsp;
+  <a class="instagram" href="#" style="color: #3c06ff;"><i class="fa fa-instagram"></i></a> &nbsp;
+  <a class="linkedin" href="#" style="color: #3c06ff;"><i class="fa fa-linkedin"></i></a>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+              <a href="#">AIM Real Estate</a>.
+          </p>
+      </div>
+  </div>
+</div>
+</footer>
+
+
+<script src="static/js/script.js"></script>
+<script src="static/js/leaflet.js"></script>
+
+
+  </body>
+  </html>
